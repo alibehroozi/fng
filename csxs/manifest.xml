@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<ExtensionManifest Version="6.0" ExtensionBundleId="mf3.test"  ExtensionBundleVersion="2.0.0" ExtensionBundleName="mf3.test" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <ExtensionList>
+        <Extension Id="mf3.test" Version="2.0" />
+    </ExtensionList>
+
+    <ExecutionEnvironment>
+        <HostList>
+            <Host Name="AEFT" Version="[13.0,15.0]" />
+        </HostList>
+        <LocaleList>
+            <Locale Code="All" />
+        </LocaleList>
+        <RequiredRuntimeList>
+            <RequiredRuntime Name="CSXS" Version="6.0" />
+        </RequiredRuntimeList>
+    </ExecutionEnvironment>
+
+    <DispatchInfoList>
+        <Extension Id="mf3.test">
+        <DispatchInfo>
+            <Resources>
+                <MainPath>./dist/index.html</MainPath>
+                <CEFCommandLine>
+                    <Parameter>--enable-nodejs</Parameter>
+                    <Parameter>--mixed-context</Parameter>
+                    <Parameter>--proxy-auto-detect</Parameter>
+                </CEFCommandLine>
+            </Resources>
+            <Lifecycle>
+                <AutoVisible>true</AutoVisible>
+            </Lifecycle>
+            <UI>
+                <Type>Panel</Type>
+                <Geometry>
+                    <Size>
+                        <Height>562</Height>
+                        <Width>356</Width>
+                    </Size>
+                </Geometry>
+                <Menu>FNG TEST</Menu>
+            </UI>
+        </DispatchInfo>
+        </Extension>
+    </DispatchInfoList>
+</ExtensionManifest>
