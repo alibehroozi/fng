@@ -24,7 +24,7 @@ export class CoursesComponent implements OnInit {
     constructor(service: CoursesService) {
         this.myCourses = service.getCourses();
     }
-    ngOnInit(){
+    ngOnInit() {
     }
     getTitle() {
         return this.title;
@@ -33,7 +33,7 @@ export class CoursesComponent implements OnInit {
     onEnter(email) {
         console.log(this.email);
         this.email = 'salam';
-        this.clickme.emit();
+        // this.clickme.emit();
     }
 }
 

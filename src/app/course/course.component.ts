@@ -11,10 +11,7 @@ export class CourseComponent implements OnInit {
   constructor(private route: ActivatedRoute) { }
 
   ngOnInit() {
-    this.route.paramMap
-      .subscribe(params => {
-        // this.courseId = params.params.courseId;
-      });
+
   }
 
 }
